@@ -39,7 +39,6 @@ def read_pdf(file_bytes) -> str:
       text_chunks.append(f"--- {i+1} ---\n {page_text}")
 
       full_text = "\n\n".join(text_chunks) #Join all pages into a single string
-    print(full_text)
     return full_text
 
 
